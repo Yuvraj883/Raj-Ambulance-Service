@@ -1,22 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, Shield, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 import SEOImage from './SEOImage';
+import Amb1 from '../Images/Amb1.jpeg';
+// import Amb2 from '../Images/Amb2.jpeg';
+import Amb3 from '../Images/Amb3.jpeg';
+import Amb4 from '../Images/Amb4.jpeg';
+
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1587745416684-47953f16f02f?auto=format&fit=crop&q=80",
+    url: Amb1,
     title: "Emergency Response",
     subtitle: "24/7 Emergency Medical Services",
     alt: "Emergency ambulance service in India providing rapid medical response"
   },
   {
-    url: "https://images.unsplash.com/photo-1612277635895-b2a4b39a5c6f?auto=format&fit=crop&q=80",
+    url: Amb4,
     title: "Advanced Life Support",
     subtitle: "State-of-the-art Medical Equipment",
     alt: "Advanced life support ambulance equipped with modern medical equipment"
   },
   {
-    url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",
+    url: Amb3,
     title: "Professional Care",
     subtitle: "Certified Medical Professionals",
     alt: "Professional medical team providing emergency healthcare services"
@@ -49,7 +54,7 @@ export default function Hero() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-20' : 'opacity-0'
+              index === currentSlide ? 'opacity-50' : 'opacity-0'
             }`}
           >
             <SEOImage
@@ -60,8 +65,8 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      
-      <button 
+
+      <button
         onClick={prevSlide}
         onMouseEnter={() => setIsAutoPlaying(false)}
         onMouseLeave={() => setIsAutoPlaying(true)}
@@ -70,8 +75,8 @@ export default function Hero() {
       >
         <ChevronLeft className="h-6 w-6" aria-hidden="true" />
       </button>
-      
-      <button 
+
+      <button
         onClick={nextSlide}
         onMouseEnter={() => setIsAutoPlaying(false)}
         onMouseLeave={() => setIsAutoPlaying(true)}
@@ -80,7 +85,7 @@ export default function Hero() {
       >
         <ChevronRight className="h-6 w-6" aria-hidden="true" />
       </button>
-      
+
       <div className="relative container mx-auto px-4 py-24">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold mb-6">
@@ -90,13 +95,13 @@ export default function Hero() {
             Professional emergency medical care across major Indian cities. Our team of certified paramedics ensures rapid response times and quality healthcare.
           </p>
           <div className="flex flex-wrap gap-6">
-            <a 
+            <a
               href="tel:102"
               className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
               Emergency: 102
             </a>
-            <a 
+            <a
               href="#booking"
               className="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition"
             >
@@ -105,7 +110,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
+
       <div className="relative bg-white/10 backdrop-blur-sm py-8">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
