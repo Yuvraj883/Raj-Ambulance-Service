@@ -15,7 +15,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-6 p-8">
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
               <MapPin className="h-6 w-6 text-red-600 mt-1" />
@@ -45,7 +45,7 @@ export default function Contact() {
               <MessageCircle className="h-6 w-6 text-red-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
-                <a 
+                <a
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
