@@ -21,7 +21,7 @@ export default function Contact() {
               <MapPin className="h-6 w-6 text-red-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold mb-2">Our Location</h3>
-                <p className="text-gray-600">123 Healthcare Complex<br />Delhi, Delhi 110001</p>
+                <p className="text-gray-600">Near Dabri Metro Station, Gate Number 3,<br />West Delhi, Delhi 110045</p>
               </div>
             </div>
 
@@ -29,7 +29,10 @@ export default function Contact() {
               <Phone className="h-6 w-6 text-red-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold mb-2">Phone Number</h3>
-                <p className="text-gray-600">+91 98114 49638</p>
+                <p className="text-gray-600"><a href="tel:+919811449638" className="text-lg font-semibold text-red-600">
+  +91 98114 49638
+</a>
+</p>
               </div>
             </div>
 
