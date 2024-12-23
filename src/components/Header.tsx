@@ -13,7 +13,7 @@ export default function Header() {
             </span>
           </div>
 
-          <div className='hidden md:flex items-center space-x-8'>
+          <div className='hidden md:flex items-center font-semibold space-x-8'>
             <a href='#services' className='text-gray-600 hover:text-red-600'>
               Services
             </a>
